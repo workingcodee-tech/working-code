@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    max-width: 100%;
+    justify-items: center;
+    background: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    border: 2px solid aqua;
+    box-shadow: inset 0 0 2.3rem aqua;
+    align-content: center;
+    width: 90%;
+    margin-block: 1rem;
+    padding: .5rem 2.5rem;
+    border-radius: 5rem;
+    animation: header-anim 1s ease-in-out;
+}
+@keyframes header-anim {
+    0%{
+        transform:translateY(-150px)
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+header .name-head{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header .name-head img{
+    width: 5%;
+    border-radius: 50%;
+}
+header .name-head p{
+    color: aqua;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+header .btns-head .head-btn1{
+    padding: .6rem 1.7rem;
+    background: aqua;
+    border-radius: 5rem;
+    color: black;
+    overflow: hidden;
+    border: 2px solid aqua;
+    font-size: 1rem;
+    position: relative;
+}
+header .btns-head .head-btn1::after{
+    content: "Kirish";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    font-size: 0;
+    align-content: center;
+    border-radius: 5rem;
+    background: black;
+    color: aqua;
+    transition: all .3s ease-in-out;
+}
+header .btns-head .head-btn1:hover::after{
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+header .btns-head .head-btn1:hover{
+    box-shadow: 0 0 1rem aqua;
+}
+section{
+    width: 100%;
+    min-height: 90vh;
+
+}
+.home-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+.home-section .menu-home{
+    width: 30%;
+}
+.home-section .menu-home .home-text1{
+    color: aqua;
+    font-size: 4rem;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.home-section .menu-home .home-text1 span{
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: gray;
+}
+.home-section .menu-home .home-text2{
+    color: azure;
+    margin-block: 1.3rem;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.home-section .home-img{
+    width: 35%;
+    animation: home-img-anim 3s ease-in-out infinite;
+}
+@keyframes home-img-anim {
+    0%{
+        transform:translateY(-50px)
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+.home-btns{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+.home-btns .home-btn1{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    background: aqua;
+    border: 2px solid aqua;
+    padding: .7rem 2.3rem;
+    border-radius: 5rem;
+}
+.home-btns .home-btn1 i{
+    font-size: 1.5rem;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+.home-btns .home-btn1 p{
+    font-size: 1.5rem;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+.home-btns .home-btn1:hover{
+    background: black;
+    transition: all .3s ease-in-out;
+}
+.home-btns .home-btn1:hover i{
+    color: aqua;
+}
+.home-btns .home-btn1:hover p{
+    color: aqua;
+}
+.home-btns .home-btn2 i{
+    font-size: 1.5rem;
+    color: aqua;
+    transition: all .3s ease-in-out;
+}
+.home-btns .home-btn2 p{
+    font-size: 1.5rem;
+    color: aqua;
+    transition: all .3s ease-in-out;
+}
+.home-btn2{
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+    background: black;
+    border: 2px solid aqua;
+    padding: .7rem 2.3rem;
+    border-radius: 5rem;
+}
+.home-btn2:hover{
+    background: aqua;
+}
+.home-btn2:hover p{
+    color: black;
+}
+.home-btn2:hover i{
+    color: black;
+}
+.project .pro-text1{
+    text-align: center;
+    color: aqua;
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.project .project-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    justify-content: space-around;
+}
+.project .project-list .project-item{
+    width: 20%;
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: .7rem;
+    background: rgb(22, 22, 22);
+}
+.project .project-list .project-item .pro-img{
+    width: 100%;
+    border-radius: .7rem;
+}
+.project .project-list .project-item .pro-name{
+    color: aqua;
+    font-size: 1.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-block: .3rem;
+}
+.project .project-list .project-item .project-text{
+    font-size: 1rem;
+    color: gray;
+}
