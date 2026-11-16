@@ -248,4 +248,57 @@ section{
     body{
         width: 100%;
     }
+    header{
+        padding: -5rem 1rem;
+    }
+    header .name-head img{
+        width: 30%;
+    }
+    header .name-head p{
+        font-size: 1rem;
+    }
+    header .btns-head .head-btn1{
+        font-size: .7rem;
+        padding: .3rem 1rem;
+        margin-left: 2rem;
+    }
+    main{
+        width: 100%;
+    }
+    .home-section{
+        padding: .6rem;
+        display: block;
+        align-content: space-between;
+    }
+    .home-section .menu-home{
+        width: 100%;
+        margin-bottom: 2.5rem;
+        padding: 1rem;
+    }
+    .home-section .menu-home .home-text1{
+        font-size: 2rem;
+        width: 100%;
+    }
+    .home-section .menu-home .home-text1 span{
+        font-size: 1rem;
+    }
+    .home-section .menu-home .home-text2{
+        font-size: .8rem;
+    }
+    .home-section .menu-home .home-btns a{
+        padding: .4rem 1rem;
+    }
+    .home-section .menu-home .home-btns a i{
+        font-size: .8rem;
+    }
+    .home-section .menu-home .home-btns a p{
+        font-size: .8rem;
+    }
+    .home-section .home-img{
+        width: 100%;
+    }
+    .project .pro-text1{
+        font-size: 2rem;
+        margin-bottom: -1rem;
+    }
 }
